@@ -31,26 +31,39 @@ header p {
 section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     
 }
 
 .card-column {
     display: flex;
-    border: solid 10px;
-    border-color: var(--mainFontColor);
+    border: dashed 2px;
+    border-color: var(--secondFontColor);
     width: 30%;
-    margin-bottom: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+figure {
+    border: solid;
+}
+
+pre {
+    background-color: var(--mainFontColor);
+}
+
+code {
+    color: var(--secondFontColor);
 }
 
 @media (max-width: 992px) {
     .card-column {
-        width: 50%;
+        width: 47%;
     }
 }
 
 @media (max-width: 768px) {
     .card-column {
-        width: 100%;
+        width: 97%;
     }
 }
