@@ -1,5 +1,5 @@
 :root {
-    --mainFontColor: magenta;
+    --mainFontColor: darkmagenta;
     --defaultBorderRadius: 15px;
     --backgroundColor: rgb(63, 63, 63);
     --secondFontColor: white;
@@ -49,7 +49,7 @@ figure {
 }
 
 pre {
-    background-color: var(--mainFontColor);
+    background: linear-gradient(180deg, magenta, black);
 }
 
 code {
