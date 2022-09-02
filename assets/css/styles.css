@@ -1,5 +1,5 @@
 :root {
-    --mainFontColor: darkmagenta;
+    --mainFontColor: rgb(206, 27, 206);
     --defaultBorderRadius: 15px;
     --backgroundColor: rgb(63, 63, 63);
     --secondFontColor: white;
@@ -28,6 +28,12 @@ header p {
     justify-content: center;
 }
 
+footer {
+    color: var(--mainFontColor);
+    display: flex;
+    justify-content: center;
+}
+
 section {
     display: flex;
     flex-wrap: wrap;
@@ -46,6 +52,7 @@ section {
 
 figure {
     border: solid;
+    width: 100%;
 }
 
 pre {
