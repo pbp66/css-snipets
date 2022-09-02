@@ -1,0 +1,103 @@
+:root {
+    --pink: rgb(202, 0, 202);
+    --dark: rgb(47,47,47);
+    --padding: 15px;
+    --radius: 10px;
+}
+
+/* Select everything but the .page-title element*/
+/* *:not(.page-title) { 
+    line-height: 32px;
+} */
+
+body {
+    background-color: var(--dark);
+    color: white;
+    font-size: 20px;
+    line-height: 32px;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
+
+header {
+    text-align: center; /* This will cascade down to */
+}
+
+.page-title {
+    color: var(--pink);
+    font-size: 65px;
+    margin: 25px 0px;
+    line-height: 65px;
+}
+
+header p {
+    margin: 0px auto 50px; /* Use auto to pad the margin to center a block element*/
+    max-width: 960px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    align-items: stretch;
+}
+
+.justify-center {
+    justify-content: center
+}
+
+.card-column {
+    width: 31%;
+    margin-bottom: 65px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /* display flex defaults to row objects*/
+    position: relative;
+    border: 2px dashed white;
+    padding: 20px;
+    height: 100%; /* Use this with align-items: stretch in parent element*/
+}
+
+.card h2, .card p {
+    color: var(--pink);
+}
+
+.card h2 {
+    font-size: 22px;
+    border: 2px solid white;
+    padding: var(--padding);
+    border-radius: var(--radius);
+    position: absolute;
+    top: -34px;
+    background-color: var(--dark);
+}
+
+.card p {
+    margin-top: 25px;
+}
+
+pre {
+    white-space: pre-wrap; /* THIS is how to wrap preformatted text*/
+}
+
+.code-block {
+    flex: 1; /* Take up as much space in the flex box. See .card in flex. */
+    background: linear-gradient(0deg, var(--pink), var(--dark));
+    padding: var(--padding);
+    border-radius: var(--radius);
+
+}
+
+@media (max-width: 992px) {  
+    .card-column {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-column {
+        width: 98%;
+    }
+}
